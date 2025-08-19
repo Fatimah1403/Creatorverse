@@ -1,0 +1,105 @@
+/* EditCreator page styles */
+.edit-creator-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #000;
+    background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .edit-creator-page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+  }
+  
+  .edit-creator-container {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .back-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  
+  .back-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+  
+  .edit-creator-container h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .loading-container,
+  .error-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #000;
+    background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .loading-container::before,
+  .error-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+  }
+  
+  .loading-container > *,
+  .error-container > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .error-container a {
+    color: #4a90e2;
+    text-decoration: none;
+    margin-top: 1rem;
+  }
+  
+  .error-container a:hover {
+    text-decoration: underline;
+  }
