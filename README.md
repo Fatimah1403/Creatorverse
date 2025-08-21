@@ -40,7 +40,7 @@ The following **additional** features are implemented:
 - [x] **Supabase Integration**: Real-time database with PostgreSQL backend
 
 ## Video Walkthrough
-
+    <video controls src="WEB_103_prework_codepath_walkthrough.mp4" title="Title"></video>
 
 ## Tech Stack
 

@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 src/client.js
 src/client.js
+.env
